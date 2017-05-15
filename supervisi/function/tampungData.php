@@ -43,9 +43,30 @@ $no20=$_GET['no20'];
 $waktudatenow=$_GET['waktudatenow'];
 $supervisor=$_GET['supervisornya'];
 $komennya=$_GET['komennya'];
+$oddeven=$_GET['oddeven'];
+$tahun=$_GET['tahun'];
+echo 'seee value of data : '.$tahun;
+
 $a=array();
 $a = array( "1"=> $no1 ,"2A" => $no2, "2B" =>$no2b , 3 => $no3, 4 =>$no4, "5A" => $no5a, "5B" => $no5b,6 =>$no6,7 => $no7,"8A" => $no8,"8B" => $no8b,"9A" =>$no9a,"9B"=> $no9b,"10A" => $no10a, "10B" => $no10b,"10C" => $no10c, "11"=> $no11, "12" => $no12,"13" => $no13, "14A"=> $no14a,"14B" => $no14b,"14C"=>$no14c,"14D"=>$no14d,"15A"=>$no15a,"15B"=> $no15b,"16" => $no16, "17"=> $no17,"18"=>$no18,"19" => $no19,"20" => $no20);
-$oddeven='ganjil';
-$tahun='2016';
+
+echo "<pre>".print_r($a,true)."</pre>";
+echo "<br />";
+echo 'BAB 1 '.$bab1;
+echo "<br />";
+echo 'BAB 2 '.$bab2;
+echo "<br />";
+echo 'BAB 3 '.$bab3;
+echo "<br />";
+echo 'BAB 4 '.$bab4;
+echo "<br />";
+echo 'BAB 5 '.$bab5;
+echo "<br />";
+echo 'BAB 6 '.$bab6;
+echo "<br />";
+echo 'Index User '.$index;
+echo "<br />";
+echo 'Tanggal '.$waktudatenow;
 $new=insertAllData($index,$bab1,$bab2,$bab3,$bab4,$bab5,$bab6,$oddeven,$tahun,$waktudatenow ,$a,$supervisor,$komennya);
+
 ?>

@@ -246,7 +246,6 @@ input[type=submit]:hover {
     <td width="100px"><label for="sb">Nama Guru</label></td>
     <td ><input type="text" id="nguru" name="nguru"></td>		
   </tr>
-  <?php echo "<input type='hidden' id='guru' name='agen' value='".$idagennya."'>" ?>
   <tr><td></td><td><input type="submit" value="Tambahkan"></td></tr>
    </form>
 </table>

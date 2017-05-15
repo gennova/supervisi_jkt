@@ -12,7 +12,7 @@ session_start();
  ?>
 <html>
 <head>
-  <title>Santo Yoseph Dwiwarna</title>
+  <title>Supervisi Guru YPII Semarang</title>
   <!-- DataTables CSS -->
         <link rel="stylesheet" type="text/css" href="jquery.dataTables.css">
         <!-- jQuery -->
@@ -616,7 +616,7 @@ $d=date("Y-m-d H:i:s");
 
                 <tr>
                     <td>
-                        Guru secara konsisten dan"persisten" menciptakan komunikasi 2 arah
+                        Guru mengeluarkan kata-kata sesuai dengan pedagogi
                     </td>
                     <td class="td">  <input type="checkbox" name="enam[]" value="3" checked> </td>
                 </tr>
@@ -1619,7 +1619,34 @@ $d=date("Y-m-d H:i:s");
 			<td>Supervisor</td>    
 			<td class="td">  <input type="text" name="supervisornya"> </td>			
 		</tr>
-		
+		<tr>
+            <td rowspan="1"> 23 </td>
+      <td>Semester</td>    
+      <td class="td">  
+  <select name="semesternya">
+  <option value="Ganjil">Ganjil</option>
+  <option value="Genap">Genap</option>
+</select> 
+      </td>     
+    </tr>
+        <tr>
+            <td rowspan="1"> 24 </td>
+      <td>Tahun Pelajaran</td>    
+      <td class="td">  
+  <select name="ajarannya">
+  <option value="2015/2016">2015/2016</option>
+  <option value="2016/2017">2016/2017</option>
+  <option value="2017/2018">2017/2018</option>
+  <option value="2018/2019">2018/2019</option>
+  <option value="2019/2020">2019/2020</option>
+  <option value="2020/2021">2020/2021</option>
+  <option value="2021/2022">2021/2022</option>
+  <option value="2022/2023">2022/2023</option>
+  <option value="2023/2024">2023/2024</option>
+  <option value="2024/2025">2024/2025</option>
+</select> 
+      </td>     
+    </tr>
     </table>
 <center>	<button type="submit" id="reset">Submit</button> <center>
         
@@ -1632,7 +1659,7 @@ $d=date("Y-m-d H:i:s");
        
 </div>	
     <div id="footer">
-      &copy; 2015 - Tendy Developer
+      &copy; 2017 - Tendy Developer
     </div>
   </div>  
 <script type="text/javascript">

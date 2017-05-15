@@ -1,7 +1,7 @@
 <?php
 	ob_start();
     session_start();
-	mysql_connect("localhost","santoyos_spv","supervisi");
+	mysql_connect("localhost","root","");
     mysql_select_db("santoyos_supervisi");
     $myusername=$_POST['usernamenya'];
     $mypassword=$_POST['pass'];
@@ -28,7 +28,7 @@
 	}	
 	} else {
         echo "login gagal, cek username dan password anda \n";
-		echo "Ulangi Login  <a href=index.html>Klik disini</a>\n";
+		echo "Ulangi Login  <a href=logout.php>Klik disini</a>\n";
 		echo $myusername;
 		echo  $mypassword;
 		echo '\n level : '.$mylevel;

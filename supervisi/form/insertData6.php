@@ -2,8 +2,8 @@
 include ('../koneksi.php');
 echo "<h3><center> Data Sementara Input Evaluasi Guru </center></h3>";
 $indexuser= $_GET['idguru'];
-$oddeven='ganjil';
-$tahunajaran='2016/2017';
+$oddeven=$_GET['semesternya'];
+$tahunajaran=$_GET['ajarannya'];
 $waktudatenow=$_GET['waktusekarang'];
 $duapuluhX='20';
 $bab6=$duapuluhX;
@@ -48,7 +48,8 @@ $sembilanbelasI=$_GET['sembilanbelas'];
 $duapuluhX=$_GET['duapuluh'];
 $supervisor=$_GET['supervisornya'];
 $komennya=$_GET['txtArea'];
-
+$semesternya = $_GET['semesternya'];
+$bab5temp="";
 
 
 /*--------------- */
@@ -527,7 +528,7 @@ $bab6=$duapuluhX;
 			{
 				$bab4temp="Kurang";
 			}			
-			if ($bab5 <= 9 and $bab5 >= 6)
+			if ($bab5 <= 10 and $bab5 >= 6)
 			{
 				$bab5temp="Baik ";
 			}
@@ -538,7 +539,7 @@ $bab6=$duapuluhX;
 			else if ($bab5 < 2)
 			{
 				$bab5temp="Kurang";
-			}			
+			}				
 			
 			if ($bab6 <= 4 and $bab6 >= 3)
 			{
@@ -650,6 +651,7 @@ if ($fetchguru);
 	 <input type="hidden" name="waktudatenow" value="<?php echo $waktudatenow; ?>"></input>
 	 <input type="hidden" name="supervisornya" value="<?php echo $supervisor; ?>"></input>
 	 <input type="hidden" name="komennya" value="<?php echo $komennya; ?>"></input>
+	 <input type="hidden" name="semesternya" value="<?php echo $semesternya; ?>"></input>
 	
 		</tbody>
 		</table>
@@ -657,7 +659,7 @@ if ($fetchguru);
 	<br />
 <table border=1>
 <tr>
-	<th bgcolor="#BCF5A9" >Detail Nilai </th>
+	<th bgcolor="#BCF5A9" >Detail Nilai <?php echo $oddeven; ?></th>
 	<th bgcolor="#BCF5A9" >Insert Nilai Ke Database </th>
 	<th bgcolor="#BCF5A9" >Revisi Nilai</th>
 

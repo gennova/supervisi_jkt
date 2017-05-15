@@ -3,8 +3,8 @@ include ('../koneksi.php');
 echo "<h3><center> Data Sementara Input Evaluasi Guru </center></h3>";
 $idrandom= $_GET['idg'];
 $indexuser;
-$oddeven='ganjil';
-$tahunajaran='2016/2017';
+$oddeven;
+$tahunajaran;
 $waktudatenow;
 $duapuluhX='20';
 $bab6=$duapuluhX;
@@ -21,6 +21,9 @@ while($row = mysqli_fetch_array($result)) {
 	$waktudatenow = $row['dateinsert'];
 	$supervisor = $row['supervisor'];
 	$komennya = $row['komen'];
+	$oddeven = $row['semester'];
+	$tahunajaran = $row['tahunajaran'];
+
 	$i++;
 }
 /* send value satusatu*/

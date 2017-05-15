@@ -63,7 +63,7 @@
 		
 	}	
 	
-	function insertAllData($index,$bab1,$bab2,$bab3,$bab4,$bab5,$bab6,$oddeven,$tahun,$waktudatenow , $a,$spv,$komet)
+	function insertAllData($index,$bab1,$bab2,$bab3,$bab4,$bab5,$bab6,$oddeven,$tahun,$waktudatenow,$a,$spv,$komet)
 	{
 		/* $sqltgl="insert into tblTanggalMatkul(no,ganjil,tahunpembelajaran,tanggalinsert) values ('$index','$oddeven','$tahun','$waktudatenow') "; */
 		$uniksupervisor = generateRandStr(10);
@@ -101,9 +101,19 @@
 				$indexuser;
 				$nomor=$row;
 				$nilai=$values;
-				$sql= "insert into tblinsertrincian (nourutanrincian,indexuser,nomor,nilai,idsuprandom) values ($idrincian,'$index','$row',$values,'$uniksupervisor')";				
-				$queryx=mysql_query($sql);
-			}			
+				$sql= "insert into tblinsertrincian (nourutanrincian,indexuser,nomor,nilai,idsuprandom,tahunajaran,semester) values ($idrincian,'$index','$row',$values,'$uniksupervisor','$tahun','$oddeven')";				
+				$queryx=mysql_query($sql);	
+				
+				if ($queryx)
+				{
+					echo "Jalan ";
+				}
+				else
+				{
+					echo "BERHENTI";
+				}
+			}
+			echo $sql;
 		}	
 		header('location:../nilai.php');	
 	}

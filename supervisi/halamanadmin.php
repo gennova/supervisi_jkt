@@ -7,7 +7,7 @@ include('koneksi.php');
  ?>
 <html>
 <head>
-  <title>Santo Yoseph Dwiwarna</title>
+  <title>Supervisi Guru YPII Semarang</title>
   <!-- DataTables CSS -->
         <link rel="stylesheet" type="text/css" href="jquery.dataTables.css">
         <!-- jQuery -->

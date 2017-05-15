@@ -272,7 +272,7 @@ if ($bab1 <= 12 and $bab1 >= 7)
 			{
 				$bab4temp="Kurang";
 			}			
-			if ($bab5 <= 9 and $bab5 >= 6)
+			if ($bab5 <= 10 and $bab5 >= 6)
 			{
 				$bab5temp="Baik ";
 			}
@@ -597,12 +597,12 @@ if ($bab1 <= 12 and $bab1 >= 7)
 				Kemampuan guru memberikan motivasi/penguatan kepada siswa
 			</td>
 			<td>15a</td>
-			<th><?php echo $no15a*0.5;?></th>
+			<th><?php echo $no15a;?></th>
 
 		<tr>
 		
 			<td>15b</td>
-			<th><?php echo $no15b*0.5;?></th>
+			<th><?php echo $no15b;?></th>
 		<tr>
 
 	<tr>
@@ -624,7 +624,7 @@ if ($bab1 <= 12 and $bab1 >= 7)
 
 		<tr>
 		<td colspan=3><b><center> TOTAL NILAI BAB D </center></b></td>
-		<th><b> <?php echo (($no15a+$no15b))/2+$no16?></b></t>
+		<th><b> <?php echo $no15a+$no15b+$no16?></b></t>
 	</tr>
 
 	

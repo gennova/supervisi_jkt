@@ -11,7 +11,7 @@ $idunit   = $_SESSION["idunit"];
  ?>
 <html>
 <head>
-  <title>Santo Yoseph Dwiwarna</title>
+  <title>Supervisi Guru YPII Semarang</title>
   <!-- DataTables CSS -->
         <link rel="stylesheet" type="text/css" href="jquery.dataTables.css">
         <!-- jQuery -->
@@ -175,7 +175,7 @@ $(document).ready(function() {
 	  <ul>
 	    <li><a href="data.php?idunit=<?php echo $idunit; ?>">HOME</a></li>
 		<li><a href="nilai.php">NILAI SUPERVISI</a></li>
-<li><a href="#">SINKRONISASI</a></li>			
+<li><a href="sinkronisasi.php">SINKRONISASI</a></li>			
 	  </ul>
 	  <a href="logout.php"><div><button class="sexybutton sexysimple sexylarge" id="button2">Logout / Exit Program</button></div></a>
 	</div>	
@@ -229,7 +229,7 @@ $(document).ready(function() {
                         echo "<td>" . $row['namaguru'] . "</td>";
 						echo "<td><center>" . $row['supervisor'] . "</center></td>";
 						echo "<td><center>" . $row['totalscore'] . "</center></td>";
-						echo "<td> <a href='/form/detailnilai.php?idg=".$row['idsuprandom']."'><div><center><button class='sexybutton sexysimple sexylarge' id='button2'>Lihat Detail</button></center></div></a> </td>";
+						echo "<td> <a href='form/detailnilai.php?idg=".$row['idsuprandom']."'><div><center><button class='sexybutton sexysimple sexylarge' id='button2'>Lihat Detail</button></center></div></a> </td>";
 						echo "<td> <a href='hapus.php?idg=".$row['idsuprandom']."'><div><center><button class='sexybutton sexysimple sexylarge' id='button2'>Hapus</button></center></div></a> </td>";
                         echo "</tr>";
 						$num ++;
